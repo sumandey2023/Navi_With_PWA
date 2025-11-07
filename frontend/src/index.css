@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+/* Mobile code block fixes */
+@media (max-width: 640px) {
+  .mobile-code-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  .mobile-code-container pre {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    word-break: break-all !important;
+    white-space: pre-wrap !important;
+  }
+
+  .mobile-code-container code {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    word-break: break-all !important;
+    white-space: pre-wrap !important;
+  }
+}

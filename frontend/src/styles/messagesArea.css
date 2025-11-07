@@ -1,0 +1,11 @@
+.messages-area {
+  margin-top: 0; /* Default for large screens */
+  padding-top: 0; /* Remove padding above chat name */
+}
+
+@media (max-width: 768px) {
+  .messages-area {
+    margin-top: 0; /* Ensure no gap for smaller screens */
+    padding-top: 0; /* Ensure no extra padding above chat name */
+  }
+}

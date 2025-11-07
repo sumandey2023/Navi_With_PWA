@@ -1,0 +1,75 @@
+:root {
+  --bg: #ffffff;
+  --text: #0f172a; /* slate-900 */
+  --muted-text: #4b5563; /* gray-600 */
+  --card: #ffffff;
+  --border: #e5e7eb; /* gray-200 */
+  --surface: #ffffff;
+  --primary: #4f46e5; /* indigo-600 */
+  --primary-hover: #4338ca; /* indigo-700 */
+  --ring: #6366f1; /* indigo-500 */
+}
+
+/* Dark theme variables - will be applied via JavaScript */
+.dark {
+  --bg: #0b1020; /* near slate-950 with a hint of blue */
+  --text: #f3f4f6; /* gray-100 */
+  --muted-text: #9ca3af; /* gray-400 */
+  --card: #1f2937; /* gray-800 */
+  --border: #374151; /* gray-700 */
+  --surface: #0b1020;
+  --primary: #6366f1; /* indigo-500 */
+  --primary-hover: #5458e0;
+  --ring: #6366f1; /* indigo-500 */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Utility classes powered by CSS variables */
+.app-bg {
+  background-color: var(--bg);
+}
+.app-text {
+  color: var(--text);
+}
+.muted-text {
+  color: var(--muted-text);
+}
+.card-bg {
+  background-color: var(--card);
+}
+.surface-bg {
+  background-color: var(--surface);
+}
+.border-app {
+  border-color: var(--border);
+}
+.text-primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-primary-hover:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Smooth theme transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Ensure smooth transitions for CSS custom properties */
+:root {
+  transition: all 0.3s ease;
+}
