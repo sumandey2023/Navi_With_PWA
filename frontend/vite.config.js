@@ -16,7 +16,7 @@ export default defineConfig({
         short_name: "Navi",
         description: "AI-Powered Chat Application",
         theme_color: "#181818",
-        background_color: "#ffffff",
+        background_color: "#0a1223",
         display: "standalone",
         start_url: "/",
         icons: [
